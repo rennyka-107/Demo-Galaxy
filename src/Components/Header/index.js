@@ -1,22 +1,24 @@
 import React from "react";
+import Logo from "../Logo";
 
 const Header = () => {
   return (
     <div className="header-container">
-      <div className="left"></div>
       <div className="main">
         <div className="top-content">
-          <div className="logo">
-            <div className="img-logo"></div>
+          <Logo />
+          <div className="navbar">
+            <div className="item home">Home</div>
+            <div className="item">About us</div>
+            <div className="item">Features</div>
+            <div className="item">Contact us</div>
           </div>
-          <div className="navbar"></div>
         </div>
         <div className="bot-content">
-          <h2>World of galaxy</h2>
-          <h4>Beautiful of galaxy</h4>
+          <p>World of galaxy</p>
+          <p>Beautiful of galaxy</p>
         </div>
       </div>
-      <div className="right"></div>
     </div>
   );
 };
